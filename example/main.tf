@@ -1,4 +1,3 @@
-
 provider "azurerm" {
     version = "~> 1.23"
     use_msi = true
@@ -7,4 +6,3 @@ provider "azurerm" {
     client_id = var.client_id
     client_secret = var.client_secret
 }
-
