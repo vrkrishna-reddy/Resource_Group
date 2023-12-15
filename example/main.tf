@@ -8,8 +8,8 @@ provider "azurerm" {
     client_secret = var.client_secret
 }
 
-module "my_resource_group" {
-    source = "app.terraform.io/Sage-PLC/resource-group/azurerm"
-    group_name = var.group_name
-    location = var.location
-}
+module "resource-group" {
+  source  = "app.terraform.io/Sage_test/resource-group/azurerm"
+  version = "1.0.0"
+  resource_group_name = "app-service-rg"
+  location            = "EAST US 2"
